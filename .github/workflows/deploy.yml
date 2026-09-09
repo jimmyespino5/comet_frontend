@@ -29,6 +29,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: "build/*" # Cambia "dist/*" a "build/*" si usas Create React App en vez de Vite
+          source: "dist/*" # Cambia "build/*" a "build/*" si usas Create React App en vez de Vite
           target: "/var/www/comet-app/frontend"
           strip_components: 1
